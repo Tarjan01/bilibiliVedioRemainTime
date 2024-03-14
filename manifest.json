@@ -2,6 +2,7 @@
     "manifest_version": 2,
     "name": "bilibiliVedioRemainTime",
     "version": "1.0",
+    "homepage_url": "https://github.com/Tarjan01/bilibiliVedioRemainTime",
   
     "description": "calc remain Vedio time in bilibili",
 
