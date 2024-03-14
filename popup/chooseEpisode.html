@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>剩余时间计算</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        #timeForm {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type=number] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        #totalTime {
+            font-size: 2em;
+            color: #333;
+        }
+        #calcButton {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>总时间：</h1>
+    <form id="timeForm">
+        <label for="start">从分p:</label><br>
+        <input type="number" id="start" name="start" min="1" value="1"><br>
+        <label for="end">到分p:</label><br>
+        <input type="number" id="end" name="end" min="1" value="100"><br>
+        <p id="totalTime">0</p>
+        <input type="button" value="计算" id="calcButton">
+    </form>
+    <script src="chooseEpisode.js"></script>
+</body>
+</html>
